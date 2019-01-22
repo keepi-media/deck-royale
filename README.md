@@ -1,17 +1,25 @@
 # Welcome to Keep.i Front-End Challenge
-Our development team did a great job building the ** Deck Royale ** application, but the layout is pretty simple and we need to fix it.
+Hey dude!
+We are exciting to find our next great Front-End member, We expect you be this fuck developer!
+
+To test your skills, We would like to see your ability to improve our great application ** Deck Royale **.
+
+Our development team did a great job building this application, but the layout is pretty simple and we need to fix it.
 
 # The Challenge
 #### Create a beautiful, easy-to-navigate layout and improve the data presentation.
 
 ### Basic Items
-* Improve page layouts
+* Improve the home page layout
 * Add a css framework
 * Add charts to present data using the **Highcharts.js** api.
 
 Some extra functionality are welcome to improve our application
 
 **The layout is yours, Be creative.**
+
+## How to delivery
+Just make a pull request to our repository.
 
 ## Evaluation
 
