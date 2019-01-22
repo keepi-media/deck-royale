@@ -5,11 +5,11 @@ Our development team did a great job building the ** Deck Royale ** application,
 #### Create a beautiful, easy-to-navigate layout and improve the data presentation.
 
 ### Basic Items
-* Improve page lauouts
+* Improve page layouts
 * Add a css framework
 * Add charts to present data using the **Highcharts.js** api.
 
-Extra functionalities are welcome to improve our application
+Some extra functionality are welcome to improve our application
 
 **The layout is yours, Be creative.**
 
