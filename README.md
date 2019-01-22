@@ -11,7 +11,7 @@ Our development team did a great job building this application, but the layout i
 
 ### Basic Items
 * Improve the home page layout
-* Add a css framework
+* Add your css. DO NOT USE some framework like bootstrap ou another. 
 * Add charts to present data using the **Highcharts.js** api.
 
 Some extra functionality are welcome to improve our application
