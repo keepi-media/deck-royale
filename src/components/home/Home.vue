@@ -3,7 +3,7 @@
     <div class="row" v-if="this.hasContent">
       <div class="col-xl-8 col-md-8 col-sm-12">
         <div class="row">
-          <div class="col-md-3 col-sm-3 col-xs-6" v-for="clash_card of deck">
+          <div class="col-md-3 col-sm-3 col-xs-6" v-for="clash_card of deck" v-bind:key="clash_card._id">
             <router-link :to="{ name : 'cardInfo', params: { id: clash_card._id} }">
               <clash-card :url="`http://www.clashapi.xyz/images/cards/${clash_card.idName}.png`" :rarity="clash_card.rarity" :name="clash_card.name" :idName="clash_card.idName"/>
             </router-link>

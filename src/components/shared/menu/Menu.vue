@@ -18,7 +18,7 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li v-for="route in routes">
+          <li v-for="route in routes" v-bind:key="route.name">
             <router-link :to="route.path ? route.path : '/'">
               {{ route.title }}
             </router-link>
