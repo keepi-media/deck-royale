@@ -1,5 +1,5 @@
 <template>
-  <div class="body container-fluid">
+  <div class="body container">
     <my-menu :routes="routes"/>
     <router-view class="menu-fixed-top-content"></router-view>
     <my-footer/>

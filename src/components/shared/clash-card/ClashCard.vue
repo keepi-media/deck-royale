@@ -26,7 +26,9 @@ export default {
 
 <style scoped>
 .card-title {
-  font-weight: bold;
+  font-family: "Changa One", cursive;
+  font-size: 1.4em;
+  font-weight: normal;
 }
 
 .card-image {
