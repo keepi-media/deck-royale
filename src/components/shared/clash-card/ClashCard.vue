@@ -1,5 +1,5 @@
 <template>
-  <div class="card-image" :class="rarityStyle">
+  <div class="card-image " :class="rarityStyle">
     <p class="card-title center"><span>{{name}}</span></p>
     <img class="img-responsive" :src="url" :alt="idName">
   </div>
@@ -25,44 +25,56 @@ export default {
 </script>
 
 <style scoped>
-.card-title {
+
+ .card-title {
   font-weight: bold;
+  font-size: 20px;
+  color: #000;
 }
 
 .card-image {
-  width: 150px;
-  /* padding: 0 0 30px 0; */
-  height: 250px;
+  /* background-color: #ecf1f0; */
+  padding: 5px;
+  margin: 5px 3px;
+  text-align: center;
+  height: 100%;
+  border-radius: 10px;
+
 }
 
 .img-responsive {
   display: block;
   max-width: 100%;
   height: auto;
-}
+} 
 
 
-.rarity-default span{
-  border-bottom: solid 3px grey;
-  color: black;
-  /* color: grey; */
+
+
+
+
+/* VOU MEXER AQUI  */
+/* CORES DE ACORDO COM A RARIDADE */
+
+
+.rarity-default span {
+  
+  /* border-bottom: solid 3px grey; */
+  color: grey;
 }
 
 .rarity-rare span{
-  border-bottom: solid 3px orange;
-  color: black;
-  /* color: orange; */
+  /* border-bottom: solid 3px orange; */
+  color: orange;
 }
 
 .rarity-epic span{
-  border-bottom: solid 3px purple;
-  color: black;
-  /* color: purple; */
+  /* border-bottom: solid 3px purple; */
+  color: purple;
 }
 
 .rarity-legend span{
-  border-bottom: solid 3px blue;
-  color: black;
-  /* color: blue; */
+  /* border-bottom: solid 3px blue; */
+  color: blue;
 }
 </style>

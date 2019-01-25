@@ -25,6 +25,7 @@
           </li>
         </ul>
       </div><!-- /.navbar-collapse -->
+    
     </div><!-- /.container-fluid -->
   </nav>
 </template>
@@ -45,8 +46,19 @@ export default {
 </script>
 
 <style>
-.menu-title{
+
+  .navbar {
+    background-color: #95a5a6;
+  }
+
+  .nav .navbar-nav {
+    color: #ecf0f1;
+  }
+
+  .menu-title{
     font-weight: bold;
+    color: #ecf0f1;
     /* border-bottom: solid 5px red; */
-}
+  }
+
 </style>
