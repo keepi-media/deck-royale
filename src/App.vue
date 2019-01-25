@@ -33,8 +33,8 @@
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		text-align: center;
-		color: #2c3e50;
-		background: #fff;
+		color: #fff;
+		background: #3581b8;
 		width: 100%;
 		height: 100vh;
 		overflow: auto;
@@ -54,6 +54,10 @@
 			backface-visibility: hidden;
 			padding: 20px;
 			padding-top: 48px;
+
+			align-items: center;
+			display: flex;
+			justify-content: center;
 		}
 	}
 
