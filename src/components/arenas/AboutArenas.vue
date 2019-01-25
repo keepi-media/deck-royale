@@ -1,6 +1,6 @@
 <template>
-  <div class="left">
-    <h1><b>#</b> {{ arena.number }} - <span class="info-title">{{arena.name}}</span></h1>
+  <div class="AboutArena_Todo">
+    <h1>{{ arena.number }} - <span class="">{{arena.name}}</span></h1>
     <br>
     <p class="info-text">+ <b>{{ arena.victoryGold }} Gold</b> per Victory</p>
     <p class="info-text">Need at least <b>{{ arena.minTrophies }} Trophies</b> </p>
@@ -18,4 +18,14 @@ export default {
 }
 </script>
 <style>
+  .AboutArena_Todo {
+    background-color: white;
+    border-radius: 50px;
+    padding: 15px 50px;
+    box-shadow: 2px 5px 25px -4px rgba(0,0,0,0.75);
+  }
+
+  .AboutArena_Todo:hover {
+    transform: scale(1.008)
+  }
 </style>

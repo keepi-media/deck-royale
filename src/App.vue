@@ -28,6 +28,11 @@ export default {
 
 <style scoped>
 
+.body, html {
+  background-color: rgba(22,186,224,0.08);
+  /* height: 100vh; */
+}
+
 .menu-fixed-top-content {
   padding-top: 70px;
   padding-bottom: 50px;

@@ -1,7 +1,7 @@
 <template>
   <div class="card-image" :class="rarityStyle">
     <p class="card-title center"><span>{{name}}</span></p>
-    <img class="img-responsive" :src="url" :alt="idName">
+    <img class="img-responsive" :class="rarityStyle" :src="url" :alt="idName">
   </div>
 </template>
 
@@ -35,12 +35,18 @@ export default {
   height: 250px;
 }
 
+.card-image:hover{
+  transform: scale(1.1);
+}
+
 .img-responsive {
   display: block;
   max-width: 100%;
   height: auto;
+  /* background-color: rgba(0,0,0,0.16); */
+  box-shadow: 8px 8px 0 6px rgba(0,0,0,0.16), 0 0 0 0 rgba(0,0,0,0.08);
+  border-radius: 10%;
 }
-
 
 .rarity-default span{
   border-bottom: solid 3px grey;
@@ -65,4 +71,5 @@ export default {
   color: black;
   /* color: blue; */
 }
+
 </style>
