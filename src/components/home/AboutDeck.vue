@@ -26,9 +26,6 @@ export default {
       countCards: [],
     }
   },
-  mounted() {
-   this.countCardsArray;
-  },
   computed: {
     deckElixirCost() {
       let totalElixir = 0;
@@ -81,15 +78,6 @@ export default {
           legend += 1;
         }
       });
-      return legend;
-    },
-    countCardsArray() {
-     
-      let legend = this.countLegenCards;
-      let rare = this.countRareCards;
-      let epic = this.countEpicCards;
-      let common = this.countCommonCards;
-      // console.log('Legend', legend, 'Rare', rare, 'epic', epic, 'common', common); 
       
       this.countCards.push(
         {
@@ -98,17 +86,18 @@ export default {
         },
         {
           name: 'Epic',
-          y: epic
+          y: this.countEpicCards
         },
         {
           name: 'Rare',
-          y: rare
+          y: this.countRareCards
         },
         {
           name: 'Common',
-          y: common
+          y: this.countCommonCards
         }
-      )
+      );
+      return legend;
     }
   }
 }
