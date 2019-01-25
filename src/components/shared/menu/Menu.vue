@@ -1,6 +1,6 @@
 <template>
 
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top nav-menu-todo">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -10,9 +10,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <router-link class="navbar-brand"  :to="'/'">
-          <span class="menu-title">Deck Royale</span>
-        </router-link>
+        <ul class="nav navbar-nav">
+          <li>
+            <router-link class="navbar-brand"  :to="'/'">
+              <span class="menu-title">Deck Royale</span>
+            </router-link>
+          </li>
+        </ul>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -20,7 +24,9 @@
         <ul class="nav navbar-nav">
           <li v-for="route in routes">
             <router-link :to="route.path ? route.path : '/'">
-              {{ route.title }}
+              <label>
+               {{ route.title }}
+              </label>
             </router-link>
           </li>
         </ul>
@@ -47,6 +53,25 @@ export default {
 <style>
 .menu-title{
     font-weight: bold;
+    font-size: 38px;
     /* border-bottom: solid 5px red; */
+}
+
+.nav-menu-todo {
+  /* background-color: #0c1e44; */
+  background-color: #063d73;
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.58);
+}
+
+.nav-menu-todo label:hover, .menu-title:hover {
+  cursor: pointer;
+}
+
+.nav-menu-todo li:hover {
+  background-color: #0c1e44;
+}
+
+.nav-menu-todo label, .menu-title {
+  color: white;
 }
 </style>
