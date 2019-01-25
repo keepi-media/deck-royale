@@ -25,18 +25,20 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="461.42857"
-     inkscape:cy="647.76291"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="206.40781"
+     inkscape:cy="747.77667"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:window-width="1366"
-     inkscape:window-height="712"
+     inkscape:window-height="768"
      inkscape:window-x="0"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1" />
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     showguides="false"
+     inkscape:lockguides="false" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -45,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -161,5 +163,145 @@
        height="49.136906"
        x="-49.136894"
        y="44.511898" />
+    <rect
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       y="120.52291"
+       x="126.68576"
+       height="176.47708"
+       width="99.21875"
+       id="rect839"
+       style="opacity:1;fill:#3581b8;fill-opacity:1;stroke:none;stroke-width:0.26345852;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.52691702, 1.58075105;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       transform="rotate(120)"
+       style="opacity:1;fill:#824380;fill-opacity:1;stroke:none;stroke-width:0.25545976;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.51091953, 1.53275858;stroke-dashoffset:0;stroke-opacity:1"
+       id="path874"
+       sodipodi:type="arc"
+       sodipodi:cx="69.899765"
+       sodipodi:cy="-243.6817"
+       sodipodi:rx="26.458334"
+       sodipodi:ry="26.458334"
+       sodipodi:start="0.56934376"
+       sodipodi:end="6.0098005"
+       d="m 92.184427,-229.41856 a 26.458334,26.458334 0 0 1 -31.572102,10.51158 26.458334,26.458334 0 0 1 -16.881731,-28.67574 26.458334,26.458334 0 0 1 24.51125,-22.50532 26.458334,26.458334 0 0 1 27.13366,19.2628 l -25.475739,7.14354 z" />
+    <text
+       id="text843"
+       y="129.85498"
+       x="131.54196"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25em;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25em;font-family:Arial;-inkscape-font-specification:Arial;fill:#ffffff;stroke-width:0.26458332"
+         y="129.85498"
+         x="131.54196"
+         id="tspan841"
+         sodipodi:role="line">Deck Royale</tspan></text>
+    <path
+       d="m 213.39049,-171.55995 a 26.458334,26.458334 0 0 1 -23.00482,26.23198 26.458334,26.458334 0 0 1 -29.0103,-19.38406 26.458334,26.458334 0 0 1 15.43162,-31.29223 26.458334,26.458334 0 0 1 33.03876,11.21514 l -22.91359,13.22917 z"
+       sodipodi:end="5.7595865"
+       sodipodi:start="0"
+       sodipodi:ry="26.458334"
+       sodipodi:rx="26.458334"
+       sodipodi:cy="-171.55995"
+       sodipodi:cx="186.93216"
+       sodipodi:type="arc"
+       id="path870"
+       style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.25545976;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.51091953, 1.53275858;stroke-dashoffset:0;stroke-opacity:1"
+       transform="rotate(88.531198)" />
+    <path
+       d="M 275.43536,19.437557 A 26.458334,26.458334 0 0 1 245.27532,29.453978 26.458334,26.458334 0 0 1 227.2516,3.2795235 26.458334,26.458334 0 0 1 247.36712,-21.323779 26.458334,26.458334 0 0 1 276.6011,-8.8606126 L 253.68752,4.3685551 Z"
+       sodipodi:end="5.7595865"
+       sodipodi:start="0.60594256"
+       sodipodi:ry="26.458334"
+       sodipodi:rx="26.458334"
+       sodipodi:cy="4.3685551"
+       sodipodi:cx="253.68752"
+       sodipodi:type="arc"
+       id="path866"
+       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.25545976;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.51091953, 1.53275858;stroke-dashoffset:0;stroke-opacity:1"
+       transform="rotate(45)" />
+    <path
+       style="opacity:1;fill:#ffa500;fill-opacity:1;stroke:none;stroke-width:0.25545976;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.51091953, 1.53275858;stroke-dashoffset:0;stroke-opacity:1"
+       id="path864"
+       sodipodi:type="arc"
+       sodipodi:cx="176.29514"
+       sodipodi:cy="182.47321"
+       sodipodi:rx="26.458334"
+       sodipodi:ry="26.458334"
+       sodipodi:start="3.1207623"
+       sodipodi:end="5.7595865"
+       d="m 149.84254,183.0243 a 26.458334,26.458334 0 0 1 19.33887,-26.03518 26.458334,26.458334 0 0 1 30.02731,12.25492 l -22.91358,13.22917 z" />
+    <path
+       d="M 55.320279,271.75681 A 26.458334,26.458334 0 0 1 34.85418,246.57698 26.458334,26.458334 0 0 1 54.172185,220.50592 26.458334,26.458334 0 0 1 84.219467,232.75525 l -22.913589,13.22917 z"
+       sodipodi:end="5.7595865"
+       sodipodi:start="1.7989992"
+       sodipodi:ry="26.458334"
+       sodipodi:rx="26.458334"
+       sodipodi:cy="245.98442"
+       sodipodi:cx="61.305878"
+       sodipodi:type="arc"
+       id="path872"
+       style="opacity:1;fill:#ff00fb;fill-opacity:1;stroke:none;stroke-width:0.25545976;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.51091953, 1.53275858;stroke-dashoffset:0;stroke-opacity:1"
+       transform="rotate(-30)" />
+    <text
+       id="text845-3"
+       y="147.52812"
+       x="176.14079"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.28888893px;line-height:1.25em;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         id="tspan843-6"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.28888893px;line-height:1.25em;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+         y="147.52812"
+         x="176.14079"
+         sodipodi:role="line">Deck for Arena 7</tspan></text>
+    <rect
+       style="opacity:1;fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.30935889;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.61871777, 1.85615332;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect896"
+       width="39.6875"
+       height="49.212502"
+       x="133.96181"
+       y="222.08511"
+       rx="4.0089664"
+       ry="4.0089664" />
+    <rect
+       y="222.08511"
+       x="178.94098"
+       height="49.212502"
+       width="39.6875"
+       id="rect898"
+       style="opacity:1;fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.30935889;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.61871777, 1.85615332;stroke-dashoffset:0;stroke-opacity:1"
+       rx="4.0090427"
+       ry="4.0089664" />
+    <text
+       id="text843-7"
+       y="278.51309"
+       x="137.69905"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25em;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25em;font-family:Arial;-inkscape-font-specification:Arial;fill:#ffffff;stroke-width:0.26458332"
+         y="278.51309"
+         x="137.69905"
+         id="tspan841-5"
+         sodipodi:role="line">Deck Royale</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25em;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="182.67822"
+       y="278.51309"
+       id="text946"><tspan
+         sodipodi:role="line"
+         id="tspan944"
+         x="182.67822"
+         y="278.51309"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25em;font-family:Arial;-inkscape-font-specification:Arial;fill:#ffffff;stroke-width:0.26458332">Deck Royale</tspan></text>
+    <path
+       style="opacity:1;fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:1.16923046;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:2.33846085, 7.0153826;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 521.46484 632.42773 C 513.07064 632.42773 506.3125 639.18587 506.3125 647.58008 L 506.3125 667 L 656.3125 667 L 656.3125 647.58008 C 656.3125 639.18587 649.55436 632.42773 641.16016 632.42773 L 521.46484 632.42773 z "
+       transform="matrix(0.26458333,0,0,0.26458333,0,120.52291)"
+       id="rect948" />
+    <path
+       style="opacity:1;fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:1.16923046;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:2.33846085, 7.0153826;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 691.46484 632.42773 C 683.07048 632.42773 676.3125 639.18587 676.3125 647.58008 L 676.3125 667 L 826.3125 667 L 826.3125 647.58008 C 826.3125 639.18587 819.55452 632.42773 811.16016 632.42773 L 691.46484 632.42773 z "
+       transform="matrix(0.26458333,0,0,0.26458333,0,120.52291)"
+       id="rect950" />
   </g>
 </svg>
