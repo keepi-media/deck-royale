@@ -78,7 +78,6 @@ export default {
           legend += 1;
         }
       });
-      
       this.countCards.push(
         {
           name: 'Legendary',
@@ -98,7 +97,7 @@ export default {
         }
       );
       return legend;
-    }
+    },
   }
 }
 </script>

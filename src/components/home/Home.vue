@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="row" v-if="this.hasContent">
-      <div class="col-xl-12 col-md-12 col-sm-12">
+      <div class="col-xl-12 col-md-12 col-sm-12 animated" :class="{'active': this.hasContent === true}">
         <div class="row">
           <div class="col-md-3 col-sm-3 col-xs-6" v-for="clash_card of deck" v-bind:key="clash_card._id">
             <router-link :to="{ name : 'cardInfo', params: { id: clash_card._id} }">
@@ -81,6 +81,26 @@ export default {
   .list-deck .list-deck-item {
     display: inline-block;
     overflow: hidden;
+  }
+
+  .animated {
+    display: none;
+  }
+
+  .animated.active {
+    display: block !important;
+    animation: show 2s ease-out;
+  }
+
+  @keyframes show {
+    from {
+      opacity: 0;
+      transform: translate3d(-50px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0px, 0, 0);
+    }
   }
 
 </style>
