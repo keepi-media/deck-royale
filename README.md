@@ -2,7 +2,7 @@
 Hey dude!
 We are exciting to find our next great Front-End member, We expect you be this fuck developer!
 
-To test your skills, We would like to see your ability to improve our great application ** Deck Royale **.
+To test your skills, We would like to see your ability to improve our great application **Deck Royale**.
 
 Our development team did a great job building this application, but the layout is pretty simple and we need to fix it.
 
@@ -40,6 +40,8 @@ Just make a pull request to our repository.
 * [Vue](https://vuejs.org/)
 * [Bootstrap](https://getbootstrap.com/docs/3.3/)
 * [Clash Royale API](https://github.com/martincarrera/clash-royale-api)
+* [Highcharts](https://github.com/highcharts/highcharts)
+* [Highcharts Vue](https://github.com/highcharts/highcharts-vue)
 
 ## Requirements
 
