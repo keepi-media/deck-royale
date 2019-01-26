@@ -2,7 +2,41 @@
 	<div id="Deck">
 		<template v-if="!Requesting">		
 			<h1>Deck for Arena {{Deck.Arena}}</h1>
-			<highcharts :options="Chart"></highcharts>
+			<!-- <highcharts :options="Chart"></highcharts> -->
+
+			<!-- trying to work arround a render bug related to the Thumbnail CSS class -->
+			<div class="Thumbnail">
+				<img :src="`http://www.clashapi.xyz/images/cards/${Deck.Cards[0].idName}.png`" alt="Image">
+				<p><b>{{Deck.Cards[0].idName}}</b></p>
+			</div>
+			<div class="Thumbnail">
+				<img :src="`http://www.clashapi.xyz/images/cards/${Deck.Cards[1].idName}.png`" alt="Image">
+				<p><b>{{Deck.Cards[1].idName}}</b></p>
+			</div>
+			<div class="Thumbnail">
+				<img :src="`http://www.clashapi.xyz/images/cards/${Deck.Cards[2].idName}.png`" alt="Image">
+				<p><b>{{Deck.Cards[2].idName}}</b></p>
+			</div>
+			<div class="Thumbnail">
+				<img :src="`http://www.clashapi.xyz/images/cards/${Deck.Cards[3].idName}.png`" alt="Image">
+				<p><b>{{Deck.Cards[3].idName}}</b></p>
+			</div>
+			<div class="Thumbnail">
+				<img :src="`http://www.clashapi.xyz/images/cards/${Deck.Cards[4].idName}.png`" alt="Image">
+				<p><b>{{Deck.Cards[4].idName}}</b></p>
+			</div>
+			<div class="Thumbnail">
+				<img :src="`http://www.clashapi.xyz/images/cards/${Deck.Cards[5].idName}.png`" alt="Image">
+				<p><b>{{Deck.Cards[5].idName}}</b></p>
+			</div>
+			<div class="Thumbnail">
+				<img :src="`http://www.clashapi.xyz/images/cards/${Deck.Cards[6].idName}.png`" alt="Image">
+				<p><b>{{Deck.Cards[6].idName}}</b></p>
+			</div>
+			<div class="Thumbnail">
+				<img :src="`http://www.clashapi.xyz/images/cards/${Deck.Cards[7].idName}.png`" alt="Image">
+				<p><b>{{Deck.Cards[7].idName}}</b></p>
+			</div>
 		</template>
 	</div>
 </template>
@@ -46,6 +80,7 @@
 			},
 			Deck: {
 				Cards: [],
+				CardsImages: [],
 				Arena: 0,
 				CardsCount: null
 			},
@@ -62,7 +97,7 @@
 					(Response) => {
 
 						this.ConfigureDeck (Response.data);
-						this.ConfigureChart ();
+						// this.ConfigureChart ();
 
 						this.Requesting = false;
 					}
@@ -143,3 +178,13 @@
 	}
 
 </script>
+
+<style>
+
+	.Thumbnail {
+		width: 150px;
+		height: 186px;
+		padding: 10px;
+	}
+
+</style>

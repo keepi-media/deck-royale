@@ -36,7 +36,6 @@
 		color: #fff;
 		background: #3581b8;
 		width: 100%;
-		height: 100vh;
 		overflow: auto;
 
 		a {
@@ -66,6 +65,10 @@
 			font-size: 1em;
 			line-height: 1.375;
 		}
+	}
+
+	section {
+		margin-top: 20px;
 	}
 
 </style>
