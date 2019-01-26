@@ -8,14 +8,23 @@
 		<section>
 			<p>{{Card.description}}</p>
 		</section>
+
+		<section>
+			<Button @click.native="$router.go (-1)" Type="CTA">create another deck</Button>
+		</section>
 	</div>
 </template>
 
 <script>
 
+	// Import the Button component.
+	import Button from "@/components/Button";
+
+
 	// Export the Card view.
 	export default {
 		name: "Card",
+		components: {Button},
 		computed: {
 
 			/**

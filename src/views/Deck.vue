@@ -5,7 +5,10 @@
 			<!-- <highcharts :options="Chart"></highcharts> -->
 
 			<section>
-				<!-- trying to work arround a render bug related to the Thumbnail CSS class -->
+				<!-- 
+					trying to work arround a render bug related to the Thumbnail CSS class 
+					maybe it be on the flex styling of App or even in for not be using computed properties.
+				-->
 				<template v-for="Card of Deck.Cards">
 					<router-link :to="`/card/${Card._id}`" class="Thumbnail" :key="Card._id">
 						<img :src="`http://www.clashapi.xyz/images/cards/${Card.idName}.png`" alt="Image">
@@ -13,11 +16,20 @@
 					</router-link>
 				</template>
 			</section>
+
+			<section>
+				<!-- insanelly @click.native and Type property isn't working O.o -->
+				<Button @click="GenerateDeck ()" class="CTA">generate another</Button>
+			</section>
 		</template>
 	</div>
 </template>
 
 <script>
+
+	// Import the Button component.
+	import Button from "@/components/Button";
+
 
 	// Export the Deck view.
 	export default {
