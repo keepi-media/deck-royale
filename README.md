@@ -41,7 +41,6 @@ Just make a pull request to our repository.
 * [Bootstrap](https://getbootstrap.com/docs/3.3/)
 * [Clash Royale API](https://github.com/martincarrera/clash-royale-api)
 * [Highcharts](https://github.com/highcharts/highcharts)
-* [Highcharts Vue](https://github.com/highcharts/highcharts-vue)
 
 ## Requirements
 
@@ -90,6 +89,9 @@ We used the [Bootstrap v3.3.7](https://www.npmjs.com/package/bootstrap) module t
 
 ## Consuming API
 In this project we are consuming the data from the [Clash Royale API](https://github.com/martincarrera/clash-royale-api).
+
+## Highcharts Vue
+We used Highcharts wrapper for Vue Apps [Highcharts Vue](https://github.com/highcharts/highcharts-vue)
 
 ----------
 This content is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it. For more information see [Supercell’s Fan Content Policy](http://www.supercell.com/fan-content-policy).
