@@ -40,12 +40,14 @@
 
 		a {
 			cursor: pointer;
+			text-decoration: none;
+			color: inherit;
 		}
 
 		.Wrapper {
 			display: flex;
 			flex: 1 1 auto;
-			flex-direction: column;
+			flex-direction: row;
 			position: relative;
 			width: 100%;
 			height: 100vh;

@@ -4,39 +4,15 @@
 			<h1>Deck for Arena {{Deck.Arena}}</h1>
 			<!-- <highcharts :options="Chart"></highcharts> -->
 
-			<!-- trying to work arround a render bug related to the Thumbnail CSS class -->
-			<div class="Thumbnail">
-				<img :src="`http://www.clashapi.xyz/images/cards/${Deck.Cards[0].idName}.png`" alt="Image">
-				<p><b>{{Deck.Cards[0].idName}}</b></p>
-			</div>
-			<div class="Thumbnail">
-				<img :src="`http://www.clashapi.xyz/images/cards/${Deck.Cards[1].idName}.png`" alt="Image">
-				<p><b>{{Deck.Cards[1].idName}}</b></p>
-			</div>
-			<div class="Thumbnail">
-				<img :src="`http://www.clashapi.xyz/images/cards/${Deck.Cards[2].idName}.png`" alt="Image">
-				<p><b>{{Deck.Cards[2].idName}}</b></p>
-			</div>
-			<div class="Thumbnail">
-				<img :src="`http://www.clashapi.xyz/images/cards/${Deck.Cards[3].idName}.png`" alt="Image">
-				<p><b>{{Deck.Cards[3].idName}}</b></p>
-			</div>
-			<div class="Thumbnail">
-				<img :src="`http://www.clashapi.xyz/images/cards/${Deck.Cards[4].idName}.png`" alt="Image">
-				<p><b>{{Deck.Cards[4].idName}}</b></p>
-			</div>
-			<div class="Thumbnail">
-				<img :src="`http://www.clashapi.xyz/images/cards/${Deck.Cards[5].idName}.png`" alt="Image">
-				<p><b>{{Deck.Cards[5].idName}}</b></p>
-			</div>
-			<div class="Thumbnail">
-				<img :src="`http://www.clashapi.xyz/images/cards/${Deck.Cards[6].idName}.png`" alt="Image">
-				<p><b>{{Deck.Cards[6].idName}}</b></p>
-			</div>
-			<div class="Thumbnail">
-				<img :src="`http://www.clashapi.xyz/images/cards/${Deck.Cards[7].idName}.png`" alt="Image">
-				<p><b>{{Deck.Cards[7].idName}}</b></p>
-			</div>
+			<section>
+				<!-- trying to work arround a render bug related to the Thumbnail CSS class -->
+				<template v-for="Card of Deck.Cards">
+					<router-link :to="`/card/${Card._id}`" class="Thumbnail" :key="Card._id">
+						<img :src="`http://www.clashapi.xyz/images/cards/${Card.idName}.png`" alt="Image">
+						<p><b>{{Card.idName}}</b></p>
+					</router-link>
+				</template>
+			</section>
 		</template>
 	</div>
 </template>
@@ -179,12 +155,13 @@
 
 </script>
 
-<style>
+<style lang="scss">
 
 	.Thumbnail {
 		width: 150px;
 		height: 186px;
 		padding: 10px;
+		display: inline-block;
 	}
 
 </style>
