@@ -37,6 +37,8 @@
 		}),
 		created () {
 
+			this.$store.commit ("SetHeader", "Arenas");
+
 			// Get all arenas.
 			this.$api.get ("/arenas")
 			.then (

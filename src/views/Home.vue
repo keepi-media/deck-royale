@@ -15,7 +15,11 @@
 	// Export the Home view.
 	export default {
 		name: "Home",
-		components: {Button}
+		components: {Button},
+		created () {
+
+			this.$store.commit ("SetHeader", "Deck Royale");
+		}
 	}
 
 </script>

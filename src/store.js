@@ -14,7 +14,8 @@ export default new Vuex.Store({
 	state: {
 		Deck: {
 			Cards: []
-		}
+		},
+		HeaderTitle: "Deck Royale"
 	},
 	mutations: {
 
@@ -26,11 +27,17 @@ export default new Vuex.Store({
 		SetDeck (state, Data) {
 
 			state.Deck = Data;
+		},
+
+		SetHeader (state, Data) {
+
+			state.HeaderTitle = Data;
 		}
 	},
 	getters: {
 
 		// Get the Deck.
-		Deck: (state) => state.Deck
+		Deck: (state) => state.Deck,
+		HeaderTitle: (state) => state.HeaderTitle
 	}
 });

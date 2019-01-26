@@ -1,6 +1,6 @@
 <template>
 	<div id="App">
-		<Header title="Deck Royale"/>
+		<Header :Title="Title"/>
 		<div class="Wrapper">
 			<router-view/>
 		</div>
@@ -15,7 +15,12 @@
 	// Export the App component.
 	export default {
 		name: "App",
-		components: {Header}
+		components: {Header},
+		computed: {
+			Title () {
+				return this.$store.getters.HeaderTitle;
+			}
+		}
 	}
 
 </script>

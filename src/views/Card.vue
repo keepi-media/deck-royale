@@ -37,6 +37,10 @@
 					(Card) => Card._id == this.$route.params.id
 				)[0];
 			}
+		},
+		created () {
+
+			this.$store.commit ("SetHeader", this.Card.name);
 		}
 	}
 

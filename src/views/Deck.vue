@@ -156,6 +156,8 @@
 		},
 		created () {
 
+			this.$store.commit ("SetHeader", "Deck");
+
 			// Generate a new Deck.
 			this.GenerateDeck ();
 		}
