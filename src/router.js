@@ -17,6 +17,12 @@ export default new Router ({
 			path: "/deck",
 			name: "Deck",
 			component: () => import ("./views/Deck.vue")
+		},
+		,
+		{
+			path: "/card/:id",
+			name: "Card",
+			component: () => import ("./views/Card.vue")
 		}
 	]
 });

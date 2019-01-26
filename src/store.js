@@ -4,13 +4,18 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {
+	state: {
+		Deck: {
+			Cards: []
+		}
+	},
+	mutations: {
+		SetDeck (state, Data) {
 
-  },
-  mutations: {
-
-  },
-  actions: {
-
-  }
-})
+			state.Deck = Data;
+		}
+	},
+	getters: {
+		Deck: (state) => state.Deck
+	}
+});

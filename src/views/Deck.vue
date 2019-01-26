@@ -84,6 +84,8 @@
 				this.Deck.Cards = Deck;
 				this.Deck.Arena = this.GetArena ();
 				this.Deck.CardsCount = this.GetCardsCount ();
+
+				this.$store.commit ("SetDeck", this.Deck);
 			},
 			GetArena () {
 
