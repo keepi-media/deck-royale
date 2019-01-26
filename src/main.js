@@ -7,12 +7,15 @@ import HighchartsVue from 'highcharts-vue';
 import 'bootstrap/dist/css/bootstrap.css';
 import './assets/css/style.css';
 import 'bootstrap/dist/js/bootstrap.js';
+import VueProgressiveImage from 'vue-progressive-image';
+
 
 Vue.use(VueResource);
 // Vue.http.options.root = 'http://www.clashapi.xyz/';
 
 Vue.use(VueRouter);
 Vue.use(HighchartsVue);
+Vue.use(VueProgressiveImage);
 
 const router = new VueRouter({
   routes,

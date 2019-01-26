@@ -93,6 +93,9 @@ In this project we are consuming the data from the [Clash Royale API](https://gi
 ## Highcharts Vue
 We used Highcharts wrapper for Vue Apps [Highcharts Vue](https://github.com/highcharts/highcharts-vue)
 
+## Vue Progressive Image
+We used Vue Progressive Image to  load images [Vue Progressive Image](https://github.com/MatteoGabriele/vue-progressive-image)
+
 ----------
 This content is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it. For more information see [Supercell’s Fan Content Policy](http://www.supercell.com/fan-content-policy).
 
