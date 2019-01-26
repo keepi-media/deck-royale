@@ -19,41 +19,10 @@
 
 <script>
 
+	// Export the Deck view.
 	export default {
 		name: "Deck",
 		data: () => ({
-			Chart: {
-				chart: {
-					backgroundColor: "",
-					plotBackgroundColor: "",
-					plotBorderWidth: null,
-					plotShadow: false,
-					type: "pie",
-					space: [0, 0, 0, 0]
-				},
-				series: [],
-				credits: {
-					enabled: false
-				},
-				title: "",
-				plotOptions: {
-					pie: {
-						allowPointSelect: true,
-						cursor: "pointer",
-						colors: ["#fff", "#afb", "#c4d", "#d73", "#a9c"],
-						dataLabels: {
-							enabled: true,
-							format: "{point.name} {point.percentage:.1f}",
-							distance: -50,
-							filter: {
-								property: 'percentage',
-								operator: '>',
-								value: 0
-							}
-						}
-					}
-				}
-			},
 			Deck: {
 				Cards: [],
 				CardsImages: [],
@@ -64,48 +33,86 @@
 			Requesting: true
 		}),
 		methods: {
+
+			/**
+			 * Generate a new Deck.
+			 */
 			GenerateDeck () {
 
 				this.Requesting = true;
 
+				// Get a random deck.
 				const test = this.$api.get ("/random-deck")
 				.then (
 					(Response) => {
 
+						// Configure the Deck on the store.
 						this.ConfigureDeck (Response.data);
-						// this.ConfigureChart ();
 
+						// Tell that we're no longer requesting the data.
 						this.Requesting = false;
 					}
 				);
 			},
+
+			/**
+			 * Configure the generated Deck.
+			 * @param {Object} Deck the Deck to be configured
+			 */
 			ConfigureDeck (Deck) {
 
+				// Set the Deck based on the created Deck.
 				this.Deck.Cards = Deck;
+
+				// Set the Arena.
 				this.Deck.Arena = this.GetArena ();
+
+				// Set the Cards count.
 				this.Deck.CardsCount = this.GetCardsCount ();
 
+
+				// Save the Deck to the store.
 				this.$store.commit ("SetDeck", this.Deck);
 			},
+
+			/**
+			 * Get the arena of the generated Deck.
+			 */
 			GetArena () {
 
+				// The initial arena.
 				let Arena = 0;
 
+				// Loop on all cards of the deck and set the higher as the Arena.
 				for (const Card of this.Deck.Cards) {
 					if (Card.arena > Arena) {
 						Arena = Card.arena;
 					}
 				}
 
+				// Return the arena.
 				return Arena;
 			},
+
+			/**
+			 * Count all types of cards present in the Deck.
+			 */
 			GetCardsCount () {
 
+				// Set the common cards.
 				const CommonCards = this.CountCards ("Common");
+
+				// Set the rare cards.
 				const RareCards = this.CountCards ("Rare");
+
+				// Set the epic cards.
 				const EpicCards = this.CountCards ("Epic");
+
+				// Set the legendary cards.
 				const LegendaryCards = this.CountCards ("Legendary");
 
+
+				// Return an Object with the collected informations.
 				return {
 					CommonCards,
 					RareCards,
@@ -113,44 +120,31 @@
 					LegendaryCards
 				};
 			},
+
+			/**
+			 * Count all cards present in the Deck based on your rarity.
+			 * @param {String} Type the type to count
+			 */
 			CountCards (Type) {
 
+				// The initial amount of cards.
 				let Count = 0;
 
+				// Loop on all cards of the Deck and sum the times where the received
+				// rarity appears.
 				for (const Card of this.Deck.Cards) {
 					if (Card.rarity === Type) {
 						Count += 1;
 					}
 				}
 
+				// Return the amount of cards.
 				return Count;
-			},
-			ConfigureChart () {
-
-				this.Chart.series.push ({
-					data: [
-						{
-							name: "Common<br>", 
-							y: this.Deck.CardsCount.CommonCards
-						},
-						{
-							name: "Rare<br>", 
-							y: this.Deck.CardsCount.RareCards
-						},
-						{
-							name: "Epic<br>", 
-							y: this.Deck.CardsCount.EpicCards
-						},
-						{
-							name: "Legendary<br>", 
-							y: this.Deck.CardsCount.LegendaryCards
-						}
-					]
-				});
 			}
 		},
 		created () {
 
+			// Generate a new Deck.
 			this.GenerateDeck ();
 		}
 	}

@@ -1,5 +1,5 @@
 <template>
-	<header class="Header">
+	<header class="Header" id="Header">
 		<div v-if="left" class="LeftAction">
 			<div @click="$router.go (-1)">
 				<i data-eva="chevron-left-outline"></i>
@@ -16,15 +16,13 @@
 
 <script>
 
+	// Use eva icons as icon set.
 	import * as eva from "eva-icons";
 
+	// Export the Header component, where it uses dynamic data for navigation.
 	export default {
 		name: "Header",
 		props: {
-			id: {
-				type: String,
-				default: "Header"
-			},
 			left: {
 				type: Boolean,
 				default: false,
@@ -46,19 +44,14 @@
 				required: false
 			}
 		},
-		render (h) {
-
-			const Data = {
-				"class": "Header",
-				domProps: { id: this.id }
-			};
-
-			return h ("div", Data, [this.$slots.default]);
-		},
 		mounted () {
+
+			// Prevent from the icons don't be updated.
 			eva.replace ();
 		},
 		updated () {
+
+			// Prevent from the icons don't be updated.
 			eva.replace ();
 		}
 	}

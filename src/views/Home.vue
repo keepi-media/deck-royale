@@ -9,8 +9,10 @@
 
 <script>
 
+	// Import the Button component.
 	import Button from "@/components/Button";
 
+	// Export the Home view.
 	export default {
 		name: "Home",
 		components: {Button}

@@ -13,9 +13,15 @@
 
 <script>
 
+	// Export the Card view.
 	export default {
 		name: "Card",
 		computed: {
+
+			/**
+			 * Use a computed property to get the Card based on the stored
+			 * Cards and the received Id by the route.
+			 */
 			Card () {
 
 				return this.$store.getters.Deck.Cards.filter (

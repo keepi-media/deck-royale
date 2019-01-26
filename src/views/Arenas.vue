@@ -28,6 +28,7 @@
 
 <script>
 
+	// Export the Arenas view.
 	export default {
 		name: "Arenas",
 		data: () => ({
@@ -36,10 +37,15 @@
 		}),
 		created () {
 
+			// Get all arenas.
 			this.$api.get ("/arenas")
 			.then (
 				(Response) => {
+
+					// Set AllArenas based on the received data.
 					this.AllArenas = Response.data;
+
+					// Tell that we're no longer requesting the data.
 					this.Requesting = false;
 				}
 			);
