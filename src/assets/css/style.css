@@ -1,9 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+body > div > div.navbar-fixed-bottom.footer > div {
+  font-family: 'Courier New', Courier, monospace !important;
+}
+* {
+  font-family: 'VT323', monospace ;
+}
 .body {
-  /* padding: 0; */
+    padding: 0 auto;
+    background-color: #2ea3a7 !important;
+    font-family: 'VT323', monospace !important;
+    color: black;
+    width: 100% !important;
+    height: 100% !important;
+    
 }
 .info-title {
   font-weight: bold;
-  border-bottom: solid 5px red;
+  border-bottom: solid 2px #111;
   font-family: helvetica, sans-serif;
 }
 
@@ -27,3 +40,92 @@
 .sub-text {
   padding-left: 35px;
 }
+
+nav {
+  font-size: 30px;
+}
+
+body > div > div.navbar-fixed-bottom.footer {
+  width: 100%;
+  height: 5%;
+  background-color: #111;
+  position: relative;
+
+}
+nav {
+  background-color: #111 !important;
+  width: 100%;
+  height: 10%;
+  text-align: center !important;
+  position: relative;
+}
+body > div > nav > div > div.navbar-header > a > span {
+  font-size: 40px !important;
+}
+nav ul li{
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 0px 120px;
+}
+  div.col-xl-2.col-md-2.col-sm-12.col-xs-12 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body > div > div.menu-fixed-top-content > div > div.col-xl-8.col-md-8.col-sm-12 {
+  position: relative;
+  
+  margin: 30px;
+  float: left;
+  margin-left: 5%;
+  width: 100%;
+  height: 80%;
+}
+
+div.menu-fixed-top-content > div > div.col-xl-2.col-md-2.col-sm-12.col-xs-12 {
+  position: relative;
+  padding: 10px;
+  margin: 30px;
+  float: left;
+  margin-left: 1%;
+  width: 100%;
+  height: 80%;
+  
+}
+div.col-xl-2.col-md-2.col-sm-12.col-xs-12 p {
+  display: inline-block !important;
+  border-right: 2px solid black !important;
+  padding-right: 4px;
+}
+
+  body > div > div.menu-fixed-top-content > div > div.col-xl-2.col-md-2.col-sm-12.col-xs-12 > button {
+    margin-left: 40%;
+    font-family: 'VT323', monospace !important;
+  }
+
+  body > div > div.menu-fixed-top-content > div > div.col-xl-2.col-md-2.col-sm-12.col-xs-12 > div > h1 > span {
+    font-family: 'VT323', monospace !important;
+    margin-left: 36%;
+  }
+  body > div > div.menu-fixed-top-content > div > div.col-xl-2.col-md-2.col-sm-12.col-xs-12 {
+    margin-left: 10%;
+    font-family: 'VT323', monospace !important;
+  }
+
+  div p span {
+    border-bottom: 2px solid #111 !important;
+    
+  }
+  body > div > div.navbar-fixed-bottom.footer > div {
+    font-family: 'Courier New', Courier, monospace !important;
+  }
+  body > div > div.menu-fixed-top-content > div > div.col-xl-2.col-md-2.col-sm-12.col-xs-12 > div {
+    margin-right: 10% !important;
+  }
+  body > div > div.menu-fixed-top-content > div > div.col-xl-2.col-md-2.col-sm-12.col-xs-12 > button {
+    margin-left: 35% !important ;
+    background-color: #fff;
+    color: #111;
+    font-weight: bold;
+  }
+  
