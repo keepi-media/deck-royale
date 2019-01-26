@@ -1,7 +1,7 @@
 <template>
 
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+    <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -18,7 +18,7 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li v-for="route in routes">
+          <li v-for="route in routes" v-bind:key="route.name">
             <router-link :to="route.path ? route.path : '/'">
               {{ route.title }}
             </router-link>
@@ -46,7 +46,19 @@ export default {
 
 <style>
 .menu-title{
-    font-weight: bold;
-    /* border-bottom: solid 5px red; */
+  font-family: "Changa One";
+  font-size: 1.4em;
+  color: #000;
+  /* font-weight: bold; */
+  /* border-bottom: solid 5px red; */
+}
+.menu-title:hover {
+  color: #777;
+}
+
+.nav .router-link-exact-active.router-link-active {
+  border-bottom: solid 2px #777;
+  color: #000;
+  font-weight: bold;
 }
 </style>

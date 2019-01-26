@@ -1,15 +1,30 @@
+h6 {
+  font-family: "Changa One", cursive;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .body {
   /* padding: 0; */
+  font-family: "Roboto Slab", serif;
 }
+
+.navbar-default {
+  background: #fff;
+  box-shadow: 0px 2px 15px -5px gray;
+  border-color: transparent;
+}
+
 .info-title {
-  font-weight: bold;
+  /* font-weight: bold; */
   border-bottom: solid 5px red;
-  font-family: helvetica, sans-serif;
+  font-family: "Changa One", cursive;
 }
 
 .info-text {
   font-size: 1.4em;
-  font-family: helvetica, sans-serif;
 }
 
 .center {

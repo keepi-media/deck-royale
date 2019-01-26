@@ -2,7 +2,8 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-xl-4 col-md-4 col-sm-6 col-xs-12 center">
-        <img :src="`http://www.clashapi.xyz/images/cards/${card.idName}.png`" >
+        <progressive-img :src="`http://www.clashapi.xyz/images/cards/${card.idName}.png`" :blur="30" />
+        <!-- <img :src="`http://www.clashapi.xyz/images/cards/${card.idName}.png`" > -->
       </div>
       <div class="col-xl-6 col-md-6 col-sm-6 col-xs-12">
         <h1><span class="info-title" :class="rarityStyle">{{card.name}}</span></h1>

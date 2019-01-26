@@ -1,7 +1,8 @@
 <template>
   <div class="card-image" :class="rarityStyle">
     <p class="card-title center"><span>{{name}}</span></p>
-    <img class="img-responsive" :src="url" :alt="idName">
+    <progressive-img class="img-responsive" :src="url" :alt="idName" :blur="30" />
+    <!-- <img class="img-responsive" :src="url" :alt="idName"> -->
   </div>
 </template>
 
@@ -26,7 +27,9 @@ export default {
 
 <style scoped>
 .card-title {
-  font-weight: bold;
+  font-family: "Changa One", cursive;
+  font-size: 1.4em;
+  font-weight: normal;
 }
 
 .card-image {
