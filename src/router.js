@@ -18,11 +18,15 @@ export default new Router ({
 			name: "Deck",
 			component: () => import ("./views/Deck.vue")
 		},
-		,
 		{
 			path: "/card/:id",
 			name: "Card",
 			component: () => import ("./views/Card.vue")
+		},
+		{
+			path: "/arenas",
+			name: "Arenas",
+			component: () => import ("./views/Arenas.vue")
 		}
 	]
 });
