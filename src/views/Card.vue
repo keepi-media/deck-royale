@@ -40,6 +40,7 @@
 		},
 		created () {
 
+			// Set the Header title.
 			this.$store.commit ("SetHeader", this.Card.name);
 		}
 	}

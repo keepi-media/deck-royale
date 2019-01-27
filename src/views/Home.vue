@@ -18,6 +18,7 @@
 		components: {Button},
 		created () {
 
+			// Set the Header title.
 			this.$store.commit ("SetHeader", "Deck Royale");
 		}
 	}

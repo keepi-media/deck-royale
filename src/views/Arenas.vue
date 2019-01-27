@@ -37,6 +37,7 @@
 		}),
 		created () {
 
+			// Set the Header title.
 			this.$store.commit ("SetHeader", "Arenas");
 
 			// Get all arenas.

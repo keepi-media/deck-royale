@@ -35,6 +35,11 @@ export default new Router ({
 			path: "/arenas",
 			name: "Arenas",
 			component: () => import ("./views/Arenas.vue")
+		},
+		{
+			path: "/cards",
+			name: "Cards",
+			component: () => import ("./views/Cards.vue")
 		}
 	]
 });

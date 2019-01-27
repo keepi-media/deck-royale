@@ -156,6 +156,7 @@
 		},
 		created () {
 
+			// Set the Header title.
 			this.$store.commit ("SetHeader", "Deck");
 
 			// Generate a new Deck.
