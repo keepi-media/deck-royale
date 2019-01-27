@@ -8,8 +8,7 @@ It is a fork. The modified things where:
 3. Removed Bootstrap
 4. Updated the project to the Vue CLI 3 main template
 
-The usage is simple and it is meant to be used as a Progressive Web Application as well.
-I tried to make the styling more faithfull to the mockups.
+The usage is simple and I tried to make the styling more faithfull to the mockups.
 
 ### How to use it?
 Just clone and install with:

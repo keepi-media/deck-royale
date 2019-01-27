@@ -10,9 +10,6 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-// Add the service worker.
-import "./registerServiceWorker";
-
 
 // Configure the Vue instance to use AXIOS.
 Vue.prototype.$api = Vue.$api = AXIOS.create ({
