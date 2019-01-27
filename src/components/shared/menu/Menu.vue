@@ -48,26 +48,25 @@ export default {
     width: 100%;
     float: left;
     padding: 3% 4%;
-    background-color: aqua;
+    background-color: #34495e;
   }
   
   .brand_name {
-    background-color: aqua;
     float: left;
     width: 56px;
     height: 56px;
     font-size: 20px;
+    color: #ecf0f1;
   }
 
   .menu-title{
     font-weight: bold;
-    color: #000;
     /* border-bottom: solid 5px red; */
   }
 
   .botaoMenu {
     background-color: transparent;
-    color: #000;
+    color: #ecf0f1;
     width: 56px;
     height: 56px;
     float: right;
