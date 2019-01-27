@@ -29,11 +29,12 @@ export default {
  .card-title {
   font-weight: bold;
   font-size: 20px;
-  color: #000;
+  color: #ecf0f1;
 }
 
+
 .card-image {
-  /* background-color: #ecf1f0; */
+  /* background-color: #000; */
   padding: 5px;
   margin: 5px 3px;
   text-align: center;
@@ -57,24 +58,27 @@ export default {
 /* CORES DE ACORDO COM A RARIDADE */
 
 
-.rarity-default span {
-  
+.rarity-default {
   /* border-bottom: solid 3px grey; */
-  color: grey;
+  /* color: grey; */
+  background-color: grey;
 }
 
-.rarity-rare span{
+.rarity-rare {
   /* border-bottom: solid 3px orange; */
-  color: orange;
+  /* color: orange; */
+  background-color: orange;
 }
 
-.rarity-epic span{
+.rarity-epic {
   /* border-bottom: solid 3px purple; */
-  color: purple;
+  /* color: purple; */
+  background-color: purple;
 }
 
-.rarity-legend span{
+.rarity-legend {
   /* border-bottom: solid 3px blue; */
-  color: blue;
+  /* color: blue; */
+  background-color: blue;
 }
 </style>
