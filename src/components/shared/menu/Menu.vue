@@ -1,32 +1,27 @@
 <template>
 
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+    <div class="menu_nav">
       <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <router-link class="navbar-brand"  :to="'/'">
+      <div class="menu_brand">
+        <router-link class="brand_name"  :to="'/'">
           <span class="menu-title">Deck Royale</span>
         </router-link>
-      </div>
+        <button class="botaoMenu"><i class="material-icons">menu</i></button>        
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li v-for="route in routes">
-            <router-link :to="route.path ? route.path : '/'">
-              {{ route.title }}
-            </router-link>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
+        <div class="menu">
+          <a href="" class="botaoFecharMenu"><i class="material-icons">close</i></a>
+          <ul>
+            <li v-for="route in routes">
+              <router-link :to="route.path ? route.path : '/'">
+                {{ route.title }}
+              </router-link>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
 </template>
 
 <script>
@@ -40,13 +35,100 @@ export default {
             required: true
         }
     }
+  
 }
+
+
 
 </script>
 
 <style>
-.menu-title{
+
+  .menu_nav {
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    background-color: #34495e;
+  }
+  
+  .brand_name {
+    float: left;
+    width: 56px;
+    height: 56px;
+    font-size: 20px;
+    color: #ecf0f1;
+  }
+
+  .menu-title{
     font-weight: bold;
     /* border-bottom: solid 5px red; */
-}
+  }
+
+  .botaoMenu {
+    background-color: transparent;
+    color: #ecf0f1;
+    width: 56px;
+    height: 56px;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .7);
+    top: 0;
+    left: 0;
+  }
+
+  .menu ul {
+    width: 100%;
+    float: left;
+    text-align: center;
+  }
+
+  .menu li {
+    padding: 2%;
+  }
+
+  .menu li a {
+    font-size: 2em;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    padding: 1.5% 3%;
+  }
+
+  .menu li a:hover {
+    background-color: #95a5a6;
+  }
+
+  .botaoFecharMenu {
+    font-size: 3em;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin-right: 5%;
+  }
+
+  .div_pages {
+    background-color: #000;
+  }
+
+  .ul_pages {
+    list-style-type: none;
+  }
+
+  @media screen and (min-width: 600px) {
+    /* .menu {
+      display: block;
+    }*/
+  } 
+
 </style>

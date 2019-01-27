@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="containerAboutDeck">
     <h1><span class="info-title">About this deck</span></h1>
     <br>
     <p class="info-text"><b>Elixir Cost:</b> {{ deckElixirCost }}</p>
@@ -71,4 +71,13 @@ export default {
 }
 </script>
 <style>
+
+  .containerAboutDeck {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+
+  
+
 </style>
