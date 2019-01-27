@@ -40,6 +40,11 @@ export default new Router ({
 			path: "/cards",
 			name: "Cards",
 			component: () => import ("./views/Cards.vue")
+		},
+		{
+			path: "/statistics",
+			name: "Statistics",
+			component: () => import ("./views/Statistics.vue")
 		}
 	]
 });
