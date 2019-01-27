@@ -1,24 +1,31 @@
-import Vue from 'vue';
-import App from './App.vue';
-import VueResource from 'vue-resource';
-import VueRouter from 'vue-router';
-import { routes } from './routes';
-import 'bootstrap/dist/css/bootstrap.css';
-import './assets/css/style.css';
-import 'bootstrap/dist/js/bootstrap.js';
+// Import libraries.
+import Vue from "vue";
+import HighchartsVue from "highcharts-vue";
+import AXIOS from "axios";
 
-Vue.use(VueResource);
-// Vue.http.options.root = 'http://www.clashapi.xyz/';
+// Import the main component.
+import App from "./App.vue";
 
-Vue.use(VueRouter);
+// Import the router and the store.
+import router from "./router";
+import store from "./store";
 
-const router = new VueRouter({
-  routes,
-  mode: 'history'
+
+// Configure the Vue instance to use AXIOS.
+Vue.prototype.$api = Vue.$api = AXIOS.create ({
+	baseURL: "http://www.clashapi.xyz/api"
 });
 
-new Vue({
-  el: '#app',
-  router,
-  render: h => h(App)
-})
+// Configure the Vue instance to use HighCharts.
+Vue.use (HighchartsVue);
+
+// Configure the Vue instance to don't show the production tip.
+Vue.config.productionTip = false
+
+
+// Create a Vue instance based on the configured settings.
+new Vue ({
+	router,
+	store,
+	render: h => h (App)
+}).$mount ("#app");
