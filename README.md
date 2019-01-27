@@ -11,9 +11,6 @@ It is a fork. The modified things where:
 The usage is simple and it is meant to be used as a Progressive Web Application as well.
 I tried to make the styling more faithfull to the mockups.
 
-## Known bugs
-The data is rendered on Deck view but not shown (trying to solve it until now)
-
 ### How to use it?
 Just clone and install with:
 ```
@@ -29,3 +26,6 @@ And to build for production:
 ```
 npm run build
 ```
+
+----------
+This content is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it. For more information see [Supercell’s Fan Content Policy](http://www.supercell.com/fan-content-policy).

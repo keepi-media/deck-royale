@@ -2,13 +2,8 @@
 	<div id="Deck">
 		<template v-if="!Requesting">		
 			<h1>Deck for Arena {{Deck.Arena}}</h1>
-			<!-- <highcharts :options="Chart"></highcharts> -->
 
 			<section>
-				<!-- 
-					trying to work arround a render bug related to the Thumbnail CSS class 
-					maybe it be on the flex styling of App or even in for not be using computed properties.
-				-->
 				<template v-for="Card of Deck.Cards">
 					<router-link :to="`/card/${Card._id}`" class="Thumbnail" :key="Card._id">
 						<img :src="`http://www.clashapi.xyz/images/cards/${Card.idName}.png`" alt="Image">
